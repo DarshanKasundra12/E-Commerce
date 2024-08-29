@@ -1,0 +1,283 @@
+/* Set global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for product details */
+.product-detail {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set a fixed width */
+  max-width: 1200px; /* Optional: max width */
+  height: 600px; /* Set a fixed height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Product image */
+.product-detail img {
+  max-width: 50%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 20px; /* Add margin between image and details */
+}
+/* Container for product details */
+.product-detail-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  height: 100%;
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+  padding: 10px; /* Add padding */
+  /* margin-top: 110px; */
+}
+
+.product-detail-details::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
+/* Product name */
+.product-detail-details h1 {
+  font-size: 28px;
+  color: #181818;
+  margin-bottom: 35px;
+  margin-right: auto;
+}
+
+/* Product price container */
+.product-detail-details .price-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Book details container */
+.product-detail-details .book-details {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; /* Background color for the book details container */
+  padding: 5px 10px; /* Padding for the book details container */
+  border-radius: 5px; /* Add border radius to make it look like a rectangle */
+}
+
+/* Book details text */
+.product-detail-details .book-details span {
+  font-size: 16px;
+  color: #333;
+  margin-right: 5px; /* Add margin between book details */
+}
+
+/* Product description */
+.product-detail-details .description {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 2px;
+  word-wrap: break-word;
+  padding-left: 20px;
+}
+
+/* Bullet points */
+.product-detail-details .description ul {
+  padding-left: 20px;
+  margin-bottom: -20px;
+}
+
+.product-detail-details .description li {
+  margin-bottom: 10px;
+  
+}
+
+/* Variant description */
+.variant-description {
+  font-size: 18px;
+  color: #000; /* Set to black */
+  margin-top: 0;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  padding-left: 20px;
+  
+}
+
+
+/* Option button */
+.product-detail .options button {
+  background-color: #fff;
+  border: 2px solid #4d3c46;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: #000;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+/* Selected option button */
+.product-detail .options button.selected {
+  background-color: #4d3c46;
+  color: #fff;
+}
+
+/* Hover effect on option button */
+.product-detail .options button:hover {
+  border-color: #66545e;
+}
+
+/* Container for variant buttons */
+.product-detail .variants {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Variant card */
+/* Variant card */
+/* Variant card */
+/* Variant card */
+.product-detail .variants .variant-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #4d3c46; /* Add border */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: #000;
+  width: 65px; /* Set desired width */
+  height: 65px; /* Set desired height */
+  text-align: center;
+  overflow: hidden;
+  padding: 0; /* Remove padding */
+}
+
+/* Image inside variant card */
+.product-detail .variants .variant-card img {
+  max-width: 100%; /* Ensure the image takes up the full width of the container */
+  max-height: 100%; /* Ensure the image takes up the full height of the container */
+  object-fit: contain; /* Resize the image while maintaining its aspect ratio and fitting it within the container */
+}
+
+
+
+/* Hide the color name */
+.product-detail .variants .variant-card span {
+  display: none;
+}
+
+/* Hover effect on variant card */
+.product-detail .variants .variant-card:hover {
+  border-color: #0a6dc4;
+}
+
+/* Container for action buttons */
+.product-detail .action-buttons {
+  margin-top: 20px;
+}
+
+/* Buy Now button */
+.product-detail .action-buttons .buy-now {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #66545e;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  font-weight: 800;
+}
+
+/* Add to Cart button */
+.product-detail .action-buttons .add-to-cart {
+  padding: 10px 20px;
+  border: none;
+  background-color: #a39193;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  font-weight: 800;
+}
+
+/* Hover effect on Buy Now button */
+.product-detail .action-buttons .buy-now:hover {
+  background-color: #4d3c46;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 1.35);
+}
+
+/* Hover effect on Add to Cart button */
+.product-detail .action-buttons .add-to-cart:hover {
+  background-color: #cebfb6;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 1.35);
+}
+
+@media only screen and (max-width: 768px) {
+  /* Hide variant buttons for mobile devices */
+  .product-detail .variants {
+    display: none;
+  }
+}
+
+.hide-on-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hide-on-desktop {
+    display: block;
+  }
+}
+
+
+.variant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #4d3c46; /* Add border */
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: #000;
+  width: 144.7px; /* Reduced width */
+  height: 67.6px; /* Reduced height */
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.product-detail-details .book-details .variant-card.selected {
+  background-color: #343434; /* Background color */
+  color: #fff !important; /* Text color with higher priority */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight box shadow */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transition effect */
+}
+
+.product-detail-details .book-details .variant-card.selected span {
+  color: #fff !important; /* Ensure span text color changes */
+}
+
+
+.product-detail-details h3 {
+  font-size: 20px;
+  color: #111111;
+  margin-bottom: 10px;
+margin-left: -38px;
+}
+
+.other-category-details{
+  font-size: 25px;
+  font-weight: bold;
+}

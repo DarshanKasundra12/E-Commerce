@@ -1,0 +1,30 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "MERN Stack User Authentication",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anand Shrestha",
+  "license": "ISC",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.27",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "shortid": "^2.2.16",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

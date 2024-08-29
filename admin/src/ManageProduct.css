@@ -1,0 +1,37 @@
+.manage-products-container {
+    padding: 20px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table th, .products-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.products-table th {
+    background-color: #f4f4f4;
+}
+
+.product-image {
+    max-height: 80px;
+}
+
+.discount-input {
+    width: 60px;
+}
+
+.remove-button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.apply-discounts-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

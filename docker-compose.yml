@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    # volumes:
+    #   - ./backend:/app
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - MONGO_URI=mongodb+srv://kavybhavsar3011:kavy3011@cluster0.1fwqsln.mongodb.net/NOC?retryWrites=true&w=majority
+    depends_on:
+      - mongo
+  ecommerce:
+    build: ./ecommerce
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+  mongo:
+    image: mongo:7
+    restart: always
+    # No need to expose port 27017 for Atlas usage
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:

@@ -18,7 +18,7 @@ function ProductDisplay() {
 
   const fetchProduct = async (productId) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/products/${productId}`);
+      const response = await fetch(`https://e-commerce-1-zey8.onrender.com/api/products/${productId}`);
       if (response.ok) {
         const productData = await response.json();
         setProduct(productData);

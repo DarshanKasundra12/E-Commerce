@@ -14,7 +14,7 @@ function Product() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/products');
+      const response = await fetch('https://e-commerce-1-zey8.onrender.com/api/products');
       if (response.ok) {
         const productsData = await response.json();
         const matchedProducts = productsData.filter(product => fuzzyMatch(product.category, category));

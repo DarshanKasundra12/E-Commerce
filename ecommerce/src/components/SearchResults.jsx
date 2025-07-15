@@ -17,7 +17,7 @@ const SearchResults = () => {
         }
 
         const response = await fetch(
-          `http://localhost:3001/api/search?query=${query}`
+          `https://e-commerce-1-zey8.onrender.com/api/search?query=${query}`
         );
         if (!response.ok) {
           throw new Error("Error fetching search results");
@@ -37,7 +37,7 @@ const SearchResults = () => {
   const fetchProduct = async (productId) => {
     try {
       const response = await fetch(
-        `http://localhost:3001/api/products/${productId}`
+        `https://e-commerce-1-zey8.onrender.com/api/products/${productId}`
       );
       if (response.ok) {
         const productData = await response.json();

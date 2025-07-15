@@ -18,7 +18,7 @@ const Login = ({ onLoginSuccess }) => {
     setIsLoading(true);
     setError("");
     try {
-      const url = "http://localhost:3001/api/signin";
+      const url = "https://e-commerce-1-zey8.onrender.com/api/signin";
       const response = await axios.post(url, data);
       const token = response.data.token; // Assuming the token is returned in the response data
       localStorage.setItem("access_token", token);

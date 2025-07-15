@@ -140,7 +140,7 @@ function Home({ setShowUncontrolled }) {
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/categories');
+      const response = await fetch('https://e-commerce-1-zey8.onrender.com/api/categories');
       if (!response.ok) {
         console.error(`Failed to fetch categories: ${response.status} ${response.statusText}`);
         return;

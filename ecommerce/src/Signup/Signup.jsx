@@ -51,7 +51,7 @@ const Signup = () => {
     e.preventDefault();
     setLoading(true); // Set loading to true while waiting for server response
     try {
-      const url = "http://localhost:3001/api/signup";
+      const url = "https://e-commerce-1-zey8.onrender.com/api/signup";
       const { data: res } = await axios.post(url, data, {
         headers: {
           'Content-Type': 'application/json'

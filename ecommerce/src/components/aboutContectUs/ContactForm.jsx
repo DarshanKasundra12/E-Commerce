@@ -111,7 +111,7 @@
       e.preventDefault();
   
       try {
-        const response = await fetch('http://localhost:3001/api/contact', {
+        const response = await fetch('https://e-commerce-1-zey8.onrender.com/api/contact', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
